@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+body{
+	font-family: "Poppins",sans-serif;
+	display: flex;
+	background: linear-gradient(45deg,#94A1EF,#9AB8F7,#825B97,#825B97,#623C74,#431C52);
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	perspective: 1000px;
+	background-size: 500% 500%;
+	animation: colors 8s ease infinite reverse;
+}
+
+@keyframes colors{
+	25%{
+		background-position: 0% 25%;
+	}
+	50%{
+		background-position: 50% 0%;
+	}
+	75%{
+		background-position: 0% 75%
+	}
+
+	90%{
+		background-position: 70% 0%;
+	}
+}
+
+
+.container{
+	width: 50%; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card{
+	background: white;
+	transform-style: preserve-3d;
+	min-height: 80vh;
+	width: 35rem;
+	border-radius: 30px;
+	padding: 0rem 5rem;
+	box-shadow: 4px 20px 20px rgba(0,0,0,0.4),0 0 50px rgba(0,0,0,0.4); 
+}
+.sneaker{
+min-height: 35vh;
+display: flex;
+align-items: center;
+justify-content: center;
+	
+}
+
+.sneaker img {
+	width: 15.5rem;
+	z-index: 2;
+	transition: all 0.75s ease-out;
+}
+
+.circle{
+width: 11.2rem;
+height: 11.2rem;
+background: linear-gradient(
+	to right,rgba(245,70,66,0.75), rgba(8,83,156,0.75)
+	);
+position: absolute;
+border-radius: 50%;
+z-index: 1;
+
+}
+
+
+.info h1{
+padding:10px; 
+font-size: 2rem;
+text-align: center;
+transition: all 0.75s ease-out;
+}
+
+.info h3{
+	padding: 1rem 0rem;
+	font-size: 1.3rem;
+	color: #585858;
+	font-weight: lighter;
+	transition: all 0.75s ease-out;
+}
+
+.sizes{
+	display: flex;
+	justify-content: space-between;
+	transition: all 0.75s ease-out;
+}
+.sizes button{
+	padding: 0.2rem 2rem;
+	background: none;
+	border:none;
+	box-shadow: 0px 5px rgba(0,0,0,0.2);
+	border-radius: 30px;
+	cursor: pointer;
+	outline: none;
+	font-weight: bold;
+	color: #585858;
+}
+
+button.active{
+	background: #585858;
+	box-shadow: 0px 5px rgba(0,0,0,0.2);
+	color: white;
+}
+
+.purchase{
+	margin-top: 1.5rem;
+	transition: all 0.75s ease-out;
+	padding: 2rem 0rem;
+}
+
+.purchase button{
+	width:100%;
+	padding: 1rem 0rem;
+	background: #f54642;
+	border:none;
+	color: white;
+	font-size: 1rem;
+	cursor: pointer;
+	border-radius: 30px;
+	font-weight: bolder;
+	outline: none;
+	letter-spacing: 1.2px;
+	transition: all 0.75s ease-out;
+
+}
+.purchase button:hover{
+	background: linear-gradient(35deg,#f54642,#b5221f);
+	color: gold;
+}
+
+
+
